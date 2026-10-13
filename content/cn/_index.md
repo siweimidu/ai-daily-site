@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 每日自动聚合 AI 领域动态，涵盖前沿论文、开源项目与行业新闻。
+description: 顶尖语言模型导航能力与人类相当，AI模型安全性挑战引起关注。 多领域研究取得突破，涵盖强化学习调度、睡眠模型及蛋白设计。 AI编码代理应用广泛但质量存疑，行业监管与金融影响引发讨论。
 cascade:
   type: docs
 ---
