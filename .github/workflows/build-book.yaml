@@ -106,17 +106,7 @@ jobs:
           LATEST_DATE=$(basename "$LATEST_NOTE" .md)
           LATEST_YEAR_MONTH=$(echo "$LATEST_DATE" | cut -c 1-7)
           if [ -f "$TARGET_CONTENT_DIR/_index.md" ]; then
-            python3 - "$TARGET_CONTENT_DIR/_index.md" "$LATEST_DESCRIPTION" "$LATEST_YEAR_MONTH" "$LATEST_DATE" <<'PY'
-import re, sys
-path, desc, ym, date = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
-with open(path, encoding='utf-8') as f:
-    c = f.read()
-c = re.sub(r'^description:.*$', 'description: ' + desc, c, count=1, flags=re.M)
-c = re.sub(r'link="/\d{4}-\d{2}/\d{4}-\d{2}-\d{2}"', 'link="/%s/%s"' % (ym, date), c)
-with open(path, 'w', encoding='utf-8') as f:
-    f.write(c)
-print('首页已更新: %s/%s' % (ym, date))
-PY
+            python3 scripts/update_home.py "$TARGET_CONTENT_DIR/_index.md" "$LATEST_DESCRIPTION" "$LATEST_YEAR_MONTH" "$LATEST_DATE"
           fi
 
           git config user.name "github-actions[bot]"
