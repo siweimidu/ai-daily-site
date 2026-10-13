@@ -1,0 +1,130 @@
+name: Update Content from Daily Notes
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_repo:
+        description: '源仓库 (owner/repo)'
+        required: true
+        default: 'siweimidu/CloudFlare-AI-Insight-Daily'
+      source_branch:
+        description: '源分支'
+        required: true
+        default: 'main'
+
+  # 每天 UTC 01:00（北京 09:00）——晚于后端 08:00 生成
+  schedule:
+    - cron: '0 1 * * *'
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+
+      - name: Clone source repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.source_repo || 'siweimidu/CloudFlare-AI-Insight-Daily' }}
+          ref: ${{ github.event.inputs.source_branch || 'main' }}
+          path: 'clone'
+
+      - name: Process and archive daily notes
+        run: |
+          #!/bin/bash
+          set -e
+          export LANG=C.UTF-8
+
+          SOURCE_DIR="clone/daily"
+          TARGET_CONTENT_DIR="content/cn"
+
+          if [ ! -d "$SOURCE_DIR" ] || [ -z "$(ls -A $SOURCE_DIR 2>/dev/null)" ]; then
+            echo "源目录不存在或为空，退出。"
+            exit 0
+          fi
+
+          ALL_NOTES=$(find "$SOURCE_DIR" -maxdepth 1 -type f -name "????-??-??.md" | sort -r)
+          if [ -z "$ALL_NOTES" ]; then
+            echo "未找到日刊文件，退出。"
+            exit 0
+          fi
+
+          LATEST_NOTE=$(echo "$ALL_NOTES" | head -n 1)
+          echo "最新文件: $(basename $LATEST_NOTE)"
+
+          LATEST_DESCRIPTION=$(awk '/^```/{count++; next} count==1{print}' "$LATEST_NOTE" \
+            | python3 -c 'import sys; print(sys.stdin.read().replace("\n"," ").replace("```","").strip()[:150])')
+          if [ -z "$LATEST_DESCRIPTION" ]; then
+            LATEST_DESCRIPTION="每日 AI 领域动态，自动聚合并由 AI 生成中文摘要。"
+          fi
+          LATEST_DESCRIPTION=$(echo "$LATEST_DESCRIPTION" | sed 's/"/\\"/g')
+
+          echo "$ALL_NOTES" | while read -r source_file; do
+            if [ -z "$source_file" ]; then continue; fi
+
+            filename=$(basename "$source_file")
+            YEAR_MONTH=$(echo "$filename" | cut -c 1-7)
+            YEAR=$(echo "$filename" | cut -c 1-4)
+            MONTH=$(echo "$filename" | cut -c 6-7)
+            DAY=$(echo "$filename" | cut -c 9-10)
+            MONTH_NO_ZERO=$((10#$MONTH))
+            DAY_NO_ZERO=$((10#$DAY))
+
+            TARGET_MONTH_DIR="$TARGET_CONTENT_DIR/$YEAR_MONTH"
+            mkdir -p "$TARGET_MONTH_DIR"
+
+            if [ ! -f "$TARGET_MONTH_DIR/_index.md" ]; then
+              year_month_num=$(printf "%d" "${YEAR}${MONTH}")
+              index_weight=$((300000 - year_month_num))
+              printf -- "---\ntitle: %s-%s\nweight: %d\nbreadcrumbs: false\nsidebar:\n  open: true\n---\n" \
+                "$YEAR" "$MONTH" "$index_weight" > "$TARGET_MONTH_DIR/_index.md"
+              echo "创建月度索引: $TARGET_MONTH_DIR/_index.md"
+            fi
+
+            TARGET_FILE="$TARGET_MONTH_DIR/$filename"
+            weight=$((32 - DAY_NO_ZERO))
+
+            local_description=$(awk '/^```/{count++; next} count==1{print}' "$source_file" \
+              | python3 -c 'import sys; print(sys.stdin.read().replace("\n"," ").replace("```","").replace("`","").strip()[:150])')
+            if [ -z "$local_description" ]; then
+              local_description="每日 AI 领域动态摘要。"
+            fi
+            local_description=$(echo "$local_description" | sed 's/"/\\"/g')
+
+            (
+              printf -- "---\nlinkTitle: %s-%s 日报\ntitle: AI 洞察日报 %s/%s/%s\nweight: %d\nbreadcrumbs: false\ncomments: false\ndescription: \"%s\"\n---\n\n" \
+                "$MONTH" "$DAY" "$YEAR" "$MONTH_NO_ZERO" "$DAY_NO_ZERO" "$weight" "$local_description"
+              sed '1{/^## /d}' "$source_file"
+            ) > "$TARGET_FILE"
+            echo "已归档: $TARGET_FILE"
+          done
+
+          LATEST_DATE=$(basename "$LATEST_NOTE" .md)
+          LATEST_YEAR_MONTH=$(echo "$LATEST_DATE" | cut -c 1-7)
+          if [ -f "$TARGET_CONTENT_DIR/_index.md" ]; then
+            python3 - "$TARGET_CONTENT_DIR/_index.md" "$LATEST_DESCRIPTION" "$LATEST_YEAR_MONTH" "$LATEST_DATE" <<'PY'
+import re, sys
+path, desc, ym, date = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+with open(path, encoding='utf-8') as f:
+    c = f.read()
+c = re.sub(r'^description:.*$', 'description: ' + desc, c, count=1, flags=re.M)
+c = re.sub(r'link="/\d{4}-\d{2}/\d{4}-\d{2}-\d{2}"', 'link="/%s/%s"' % (ym, date), c)
+with open(path, 'w', encoding='utf-8') as f:
+    f.write(c)
+print('首页已更新: %s/%s' % (ym, date))
+PY
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/
+          if git diff --staged --quiet; then
+            echo "无内容变更。"
+          else
+            git commit -m "content: 更新日报 $(date -u +%Y-%m-%d)"
+            git push
+          fi

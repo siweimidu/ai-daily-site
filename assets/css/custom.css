@@ -1,0 +1,390 @@
+/* =================================================================== */
+/*                      Original User Styles                           */
+/* =================================================================== */
+
+h1:first-of-type {
+  /* display: none; */
+  text-align: center;
+}
+
+code, kbd, samp, pre {
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;
+}
+
+.content ol li {
+  margin-bottom: 1.5rem;
+}
+
+.content ol li strong:first-of-type {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.content ol li p strong:first-of-type {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.content :where(img):not(:where([class~=not-prose],[class~=not-prose] *)) {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: .375rem;
+  max-width: 100%;
+  min-width: 100%;
+  /* height: clamp(250px, 35vh, 500px);
+  object-fit: cover; */
+}
+
+.content table tbody tr td :where(img):not(:where([class~=not-prose],[class~=not-prose] *)){
+  height: auto;
+}
+
+.content table {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  display: table;
+}
+
+video {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .375rem;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 20px;
+}
+
+footer .hx-max-w-screen-xl{
+  max-width: 100%;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-copyright {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.footer-links a,
+.footer-copyright a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-copyright a:is(html[class~=dark] *){
+  color:#a1a8b4;
+}
+
+.footer-links a:hover,
+.footer-copyright a:hover {
+  color: #d8d8d8;
+  text-decoration: underline;
+}
+
+.ad-container,
+.google-auto-placed {
+  text-align: center;
+  max-width: 98%;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+
+.hextra-code-block pre {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.content :where(code):not(:where(.hextra-code-block code,[class~=not-prose],[class~=not-prose] *)) {
+  border-radius: 4px;
+  font-style: normal;
+  padding: 0.2em 0.4em;
+  font-size: 0.875em;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.content blockquote p a {
+    /* display: none; */
+}
+
+.hextra-max-footer-width {
+    max-width: 100%;
+}
+
+/* =================================================================== */
+/*                 [FIX v2] Light Theme Contrast Fix                   */
+/* =================================================================== */
+
+/*
+ * 通过重写 Hextra 主题的根CSS变量来从根本上修复浅色模式的对比度问题。
+ * 这比单独覆盖每个元素的样式更有效、更全面。
+ * :not(.dark) 选择器确保这些规则只在浅色模式下生效。
+*/
+html:not(.dark) {
+  /*
+   * -- 文本颜色修复 --
+   * Hextra 默认的灰色文本（如 --hx-text-gray-600 和 500）在白色背景上对比度不足。
+   * 我们将它们重新定义为更深的颜色。
+  */
+  --hx-text-gray-500: #4a5568;  /* 加深的中灰色 (原: #6b7280) */
+  --hx-text-gray-600: #2d3748;  /* 加深的深灰色 (原: #4b5563) */
+  --hx-text-gray-700: #1a202c;  /* 更深的近黑色 (原: #374151) */
+  --hx-text-gray-900: #111827;  /* 确保标题等为最深的颜色 */
+
+  /*
+   * -- 边框颜色修复 --
+   * 默认的浅灰色边框在白色背景上几乎看不见。
+   * 稍微加深它们可以提高组件的可见性。
+  */
+  --hx-border-gray-200: #d1d5db; /* 加深的浅边框 (原: #e5e7eb) */
+  --hx-border-gray-300: #b5bac0; /* 加深的中边框 (原: #d1d5db) */
+
+  /*
+   * -- 主题链接/焦点色修复 --
+   * 调整主色调的亮度和饱和度，使其在白色背景上更清晰。
+   * 这里我们使用一个更深的蓝色调。
+  */
+  --primary-hue: 212deg;         /* 深蓝色调 */
+  --primary-saturation: 82%;
+  --primary-lightness: 45%;      /* 降低亮度以增加对比度 */
+}
+
+/* 
+ * -- 行内代码块的再次确认修复 --
+ * 确保 `<code>` 标签即使不使用CSS变量也能有高对比度。
+*/
+html:not(.dark) .content :where(code):not(:where(.hextra-code-block code,[class~=not-prose],[class~=not-prose] *)) {
+  background-color: #eef0f2; /* 一个清晰可见的浅灰色背景 */
+  color: #1a202c;            /* 深色文本，确保可读性 */
+}
+
+
+/* =================================================================== */
+/*                      Dark Theme "Pornhub" Style                     */
+/* =================================================================== */
+html.dark {
+  --primary-hue: 36deg;
+  --primary-saturation: 100%;
+  --primary-lightness: 50%;
+}
+
+.hextra-footer:is(html[class~=dark] *),
+.nav-container:is(html[class~=dark] *),
+body:is(html[class~=dark] *) {
+  background-color: #1c1c1c;
+}
+
+.nav-container-blur:is(html[class~=dark] *) {
+    background-color: rgba(28, 28, 28, 0.8) !important;
+}
+
+.nav-container a:is(html[class~=dark] *),
+.nav-container svg:is(html[class~=dark] *) {
+  color: #ffffff;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-container a:hover:is(html[class~=dark] *),
+.nav-container a:hover svg:is(html[class~=dark] *),
+.nav-container button:hover svg:is(html[class~=dark] *) {
+  color: #ff9900 !important;
+}
+
+.hamburger-menu:is(html[class~=dark] *) {
+  color: #ffffff;
+}
+.hamburger-menu:hover:is(html[class~=dark] *) {
+  color: #ff9900 !important;
+}
+
+.content :where(code):not(:where(.hextra-code-block code,[class~=not-prose],[class~=not-prose] *)):is(html[class~=dark] *) {
+  background-color: #2a2a2a;
+  color: #ff9900;
+  border: 1px solid #444;
+}
+
+.hextra-code-block pre:is(html[class~=dark] *),
+.hextra-code-block .filename:is(html[class~=dark] *) {
+  background-color: #111;
+  border: 1px solid #444;
+}
+
+.hextra-code-block pre code span:is(html[class~=dark] *),
+.hextra-code-block pre code:is(html[class~=dark] *) {
+  font-style: normal !important;
+  color: #f0f0f0;
+}
+
+.dark .highlight .chroma .c, .dark .highlight .chroma .c1, .dark .highlight .chroma .cs { color: #8b949e !important; }
+.dark .highlight .chroma .k { color: #ff7b72 !important; }
+.dark .highlight .chroma .kc { color: #79c0ff !important; }
+.dark .highlight .chroma .s, .dark .highlight .chroma .s1, .dark .highlight .chroma .s2 { color: #a5d6ff !important; }
+.dark .highlight .chroma .nc { color: #f0883e !important; font-weight: 700; }
+.dark .highlight .chroma .nf { color: #d2a8ff !important; font-weight: 700; }
+
+.chroma .hl:is(html[class~=dark] *) {
+  background-color: rgba(255, 153, 0, 0.15) !important;
+}
+
+.hextra-code-copy-btn:hover:is(html[class~=dark] *) {
+  background-color: #2a2a2a;
+  color: #ff9900;
+}
+
+.content :where(a):not(:where([class~=not-prose],[class~=not-prose] *)):is(html[class~=dark] *),
+.content :where(blockquote):not(:where([class~=not-prose],[class~=not-prose] *)):is(html[class~=dark] *) {
+  color: #ff9900;
+  border-left-color: #ff9900;
+}
+.content :where(a):not(:where([class~=not-prose],[class~=not-prose] *)):hover:is(html[class~=dark] *) {
+  color: #fff;
+  text-decoration: underline;
+}
+.content :where(h2):not(:where([class~=not-prose],[class~=not-prose] *)):is(html[class~=dark] *) {
+  border-color: #444;
+}
+
+.hextra-card:is(html[class~=dark] *) {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: #f0f0f0;
+}
+.hextra-card:hover:is(html[class~=dark] *) {
+  border-color: #ff9900;
+  box-shadow: 0 0 15px rgba(255, 153, 0, 0.2);
+}
+
+.hextra-badge:is(html[class~=dark] *) {
+  background-color: #ff9900;
+  color: #000;
+  font-weight: bold;
+}
+
+.sidebar-active-item:is(html[class~=dark] *) {
+  color: #ff9900 !important;
+  font-weight: bold;
+  background-color: rgba(255, 153, 0, 0.1);
+  border-radius: 4px;
+}
+.dark\:hover\:hx-bg-primary-100\/5:hover:is(html[class~=dark] *) {
+    background-color: rgba(255, 153, 0, 0.1);
+}
+.sidebar-container a:hover:is(html[class~=dark] *) {
+  color: #ff9900;
+}
+.sidebar-container a:is(html[class~=dark] *) {
+  color: #fff;
+}
+
+.search-wrapper li .active:is(html[class~=dark] *) {
+    background-color: rgba(255, 153, 0, 0.15);
+}
+.search-wrapper .match:is(html[class~=dark] *) {
+    color: #ff9900;
+}
+.search-input:is(html[class~=dark] *) {
+  border-color: #444;
+}
+.search-input:focus:is(html[class~=dark] *) {
+  border-color: #ff9900;
+}
+
+.hextra-tabs-toggle[data-state=selected]:is(html[class~=dark] *) {
+  border-bottom: 2px solid #ff9900;
+  color: #ff9900;
+}
+
+strong:is(html[class~=dark] *) {
+    color: #f90;
+    padding: 3px;
+}
+
+.content :where(h3):not(:where([class~=not-prose],[class~=not-prose] *)):is(html[class~=dark] *) {
+    color: #f90;
+}
+
+/* =================================================================== */
+/*          [FIX v3] Light Theme Footer Contrast Fix               */
+/* =================================================================== */
+
+/*
+ * 目标：专门解决浅色主题下，页脚文本和链接颜色对比度不足的问题。
+ * 原因：页脚的链接颜色被设置为 `inherit`，它继承了 Hextra 主题
+ *      默认的浅灰色 body 文本颜色，导致在白色背景上难以阅读。
+*/
+
+/* 1. 为浅色模式下的整个页脚设置一个高对比度的基础文字颜色 */
+html:not(.dark) .footer-wrapper {
+  /* 使用深石板灰色，它在白色背景上具有非常高的对比度 (11.75:1) */
+  color: #2D3748;
+}
+
+/* 2. 为页脚链接在浅色模式下设置一个清晰的悬停 (hover) 效果 */
+/*    之前的 hover 颜色是为暗色模式设计的，在浅色模式下会看不见 */
+html:not(.dark) .footer-links a:hover,
+html:not(.dark) .footer-copyright a:hover {
+  /* 悬停时变为纯黑色，并保持下划线，提供清晰的视觉反馈 */
+  color: #000000;
+}
+
+/* =================================================================== */
+/*                      WWADS 自定义样式                               */
+/* =================================================================== */
+
+/* 移除广告容器默认背景，保持版面干净 */
+.wwads-cn,
+.wwads-cn .wwads-content,
+.wwads-cn .wwads-img,
+.wwads-cn .wwads-text,
+.wwads-cn .wwads-poweredby {
+  background: transparent !important;
+}
+
+/* 暗色模式文字颜色优化 */
+html.dark .wwads-cn .wwads-text,
+html.dark .wwads-cn .wwads-poweredby,
+html.dark .wwads-cn .wwads-poweredby a {
+  color: #d1d5db !important;
+}
+
+/* 优云智算广告加粗文案：仅浅色模式使用紫色强调 */
+html:not(.dark) .ucloud-ad-highlight {
+  color: #5139ED;
+}
