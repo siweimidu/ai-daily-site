@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: OpenAI工程师因窃听被捕引发热议，谷歌发布Gemini机器人专用模型，Character.ai申请破产保护。 国际货币基金组织警告AI股价泡沫威胁全球金融稳定，乌克兰打击虚假信息中心引发关于信息战讨论。 苹果发起营销活动挑战谷歌浏览器，Anthropic分享研发重构细节，开源社区涌现多种创新性A
+description: 今日AI领域动态频出，硬件控制方面ESP32成功实现自动操作，各类开发工程工具不断涌现提升效率。 信息处理与垂直应用持续拓展，涵盖数据分析、生活服务及短剧生成，全方位赋能用户日常各类需求。 学术研究在机器人与代码领域取得进展，行业内则探讨智能体安全、经济模型及芯片市场的前景走向。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-10/2026-10-14" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-10/2026-10-15" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
