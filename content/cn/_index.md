@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: AI监管与合规成为焦点，金融界担忧数据中心风险，西蒙斯基金会资助数学研究。 Meta与Liquid等发布前沿开源模型，社区涌现诸多实用AI工具及智能体项目。 学术界聚焦智能体演进与优化，深度学习领域通过新技术提升模型效率与应用。
+description: 今日AI资讯涵盖硬件创新、智能体开发及工程工具等多个领域。 包括ESP32控制iPhone、多智能体协同及软件工程空间等进展。 同时涉及学术前沿模型、行业争议及Anthropic财务支付漏洞。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-10/2026-10-16" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-10/2026-10-17" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
