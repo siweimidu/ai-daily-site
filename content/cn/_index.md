@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 今日AI资讯涵盖硬件创新、智能体开发及工程工具等多个领域。 包括ESP32控制iPhone、多智能体协同及软件工程空间等进展。 同时涉及学术前沿模型、行业争议及Anthropic财务支付漏洞。
+description: 今日多项AI技术更新，涵盖软件工程、密码学与机器人等。微软与CMU合作培训工程师，DeepSeek发布v4.1版本，Claude推出量子电路研究。多款开源工具上线，助力智能体开发与协作。  研究领域取得进展，包括个性化机器人操作基准测试，以及基于LLM发现新型量子电路设计。专家探讨了MoE模型架构优
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-10/2026-10-17" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-10/2026-10-18" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
