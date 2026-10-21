@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 最新AI资讯涵盖多个领域创新，包含图像生成质量提升、大语言模型行为耦合研究、科学复现智能体开发以及科研自动化框架进展。 量子机器学习通过归纳偏置优化任务，推理蒸馏与个性化记忆机制得以完善，同时高性能计算架构与多语言嵌入技术实现了新的突破。 此外，科研实验室自动化系统、药物发现引擎及安全评估工具的推出
+description: 近期AI领域动态频发，Anthropic面临巨额亏损，DeepSeek 受多方制约并发布推理框架，Meta及WhatsApp引发争议。 技术与学术界持续推进智能体研究，开源项目生态日益繁荣。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-10/2026-10-20" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-10/2026-10-21" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
