@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 近期AI领域动态频发，Anthropic面临巨额亏损，DeepSeek 受多方制约并发布推理框架，Meta及WhatsApp引发争议。 技术与学术界持续推进智能体研究，开源项目生态日益繁荣。
+description: 今日科技资讯涵盖多个前沿领域，视频生成模型实现动作协同， 代理框架助力原子尺度研究，机械手展现出色的动态泛化能力。 机器人通过时空记忆优化导航，推理技术提升大规模任务效率。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-10/2026-10-21" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-10/2026-10-22" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
