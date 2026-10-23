@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 今日科技资讯涵盖多个前沿领域，视频生成模型实现动作协同， 代理框架助力原子尺度研究，机械手展现出色的动态泛化能力。 机器人通过时空记忆优化导航，推理技术提升大规模任务效率。
+description: 今日资讯涵盖多项AI开源工具与技术进展，包括AI越狱、 电话代理、高效网关及本地部署指南。学术界发布了长上下文、 量化交易、具身智能等领域的论文，推动模型推理与评估演进。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-10/2026-10-22" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-10/2026-10-23" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
