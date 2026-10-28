@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 本文梳理了近期人工智能领域的技术进展，涵盖指令微调方法， 具身智能与机器人操作改进，强化学习框架优化及工业异常检测， 大模型训练稳定性与多模态医疗应用，体现前沿技术的多元探索。
+description: 近期AI领域动态频发，Anthropic面临版权争议，亚马逊裁撤AI部门。 警方利用AI监控驾驶员，职场人反馈AI反而增加了自身的工作强度。 多款软件被曝存在漏洞，维基百科开启清理行动，GPT新模型正式推出。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-10/2026-10-27" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-10/2026-10-28" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
