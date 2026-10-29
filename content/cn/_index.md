@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 近期AI领域动态频发，Anthropic面临版权争议，亚马逊裁撤AI部门。 警方利用AI监控驾驶员，职场人反馈AI反而增加了自身的工作强度。 多款软件被曝存在漏洞，维基百科开启清理行动，GPT新模型正式推出。
+description: 今日科技领域进展迅速，开发工具与代理框架不断推陈出新，各类多媒体视频生成技术实现爆发增长。开源社区提供丰富学习教程，助力开发者理解大模型底层原理与实践应用。 学术界在三维重建与模型鲁棒性研究上取得显著突破，同时行业动态聚焦于模型发布与合规性。各方针对AI版权争议及医疗应用风险的讨论，反映出技术进步与
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-10/2026-10-28" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-10/2026-10-29" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
