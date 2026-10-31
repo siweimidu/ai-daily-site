@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: Honeycomb-Surfels优化了三维场景重建表现与显存占用效率， 动力学链框架强化了机器人物理推理能力，PORTAL与EnvSched 提升了智能体决策与训练效率，模型鲁棒性及长序列推理架构均有更新。  HoS防御提示注入攻击，MERLIN通过矩路由优化长序列任务性能， LongChang框
+description: 学术界提出数据归因基准与隐私保护机制，优化生成架构并揭示神经丛现象。 AI智能体协作框架持续完善，端侧模型应用在移动设备上展现强劲增长势头。 Claude扩展程序现安全隐患，行业担忧AI成本及技能退化，开源创意项目涌现。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-10/2026-10-30" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-10/2026-10-31" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
