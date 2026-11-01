@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 学术界提出数据归因基准与隐私保护机制，优化生成架构并揭示神经丛现象。 AI智能体协作框架持续完善，端侧模型应用在移动设备上展现强劲增长势头。 Claude扩展程序现安全隐患，行业担忧AI成本及技能退化，开源创意项目涌现。
+description: Anthropic实施安全限制并遭遇信息泄露与评级下调，OpenAI融资未达预期且账户面临攻击风险，AI产业因高昂成本引发华尔街抛售危机。 学术界推出了CATT、PFR等多种创新技术，致力于提升模型数据归因与隐私保护能力，并在低算力条件下通过优化生成算法提升细节表现。 开源生态涌现了诸多便捷工具，涵
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-10/2026-10-31" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-01" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
