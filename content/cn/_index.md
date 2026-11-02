@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: Anthropic实施安全限制并遭遇信息泄露与评级下调，OpenAI融资未达预期且账户面临攻击风险，AI产业因高昂成本引发华尔街抛售危机。 学术界推出了CATT、PFR等多种创新技术，致力于提升模型数据归因与隐私保护能力，并在低算力条件下通过优化生成算法提升细节表现。 开源生态涌现了诸多便捷工具，涵
+description: 近期人工智能行业动态频发，经济分析显示AI尚未带来财务回报。安全领域数据泄露与合规处罚事件不断，恶意软件正利用大模型评估价值。 模型技术持续迭代，研究人员在数据归因与逻辑输出提升方面取得成果。同时，端侧智能体与自动化工具链的成熟，为应用开发带来更多创新可能。 学界聚焦通用人工智能对批判思维的影响，并
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-01" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-02" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
