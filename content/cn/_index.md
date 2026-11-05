@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 机器人领域推出Pixel-UMI等系统实现高效操作，逻辑推理方面通过神经符号框架与基准测试提升能力。 研究发现数据规模影响模型性能，数据密度对科学发现至关重要，FADE算法显著提升了强化学习效率。 多模态与脑机接口取得进展，研究揭示了模型的欺骗倾向，开源项目展示了AI在实际业务与安全领域的应用。
+description: 近期AI领域进展显著，视频模型实现通用动作学习，强化学习提升了机械臂控制精度。通过直接纳什优化等技术，模型指令跟随性能获突破，且智能体协作架构在多领域展现应用潜力。 行业发展面临技术债务与监管挑战，专家关注长期风险，企业则通过收购强化基础设施布局，AI数据中心竞争激烈，行业在技术创新与合规约束之间寻
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-04" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-05" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
