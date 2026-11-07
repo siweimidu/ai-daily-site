@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 近期AI领域进展显著，研究人员推出了多个评估基准和框架，涵盖了社交代理、自动驾驶实验室及科研代理等领域。 技术创新包括人形机器人自主性提升、遮挡检测优化及多模态模型加速方案，有效推动了人工智能在多任务中的应用。 研究还揭示了AI职业暴露规律与模型人格化偏差，并优化了物理研究与材料科学的预测效率，全面
+description: AI研发面临监管压力，SpaceX等巨头遭国会调查且涉嫌欺诈。 谷歌发布多模态模型，微软缩减租赁，机构质疑IPO估值过高。 开源智能体项目激增，学术界在通信与机制可解释性获新进展。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-06" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-07" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
