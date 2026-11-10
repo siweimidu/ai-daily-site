@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 研究提出用户嵌入解析行为模式，实现零样本受众高效检索。 轻量化智能体群体与科研转化环境，显著提升科学计算效率。 引入各类基准测试与评估框架，强化模型内部逻辑与可解释性。
+description: Anthropic发布Claude新模型创评分纪录，高盛限制使用AI代码工具引关注。 DeepX新型芯片提升推理性能，Meta发布高效模型，开源社区优化计算成本。 研究领域Agent发展迅速，隐私争议与协议变更引发思考，多元应用百花齐放。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-09" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-10" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
