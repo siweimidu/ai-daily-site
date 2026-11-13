@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: Anthropic推出新功能并寻求高估值，苹果开发本地AI工具，谷歌发布Gemini新模型，各领域技术进展迅速。 开源项目活跃于智能体技能领域，但在代码碎片化与安全漏洞方面面临严峻挑战，学术界正研究防欺诈治理。 CoreWeave债券收益率凸显基础设施建设压力，同时多篇论文展示了AI在提升计算效率与
+description: 医疗影像领域引入基础模型提升泛化性，多模态框架优化病灶检测，新技术工具与框架增强了学习效率。 对比发现范式助力科学分析，智能体评估与优化方案降低了业务成本，行业动态关注行业泡沫与融资。 开源项目涵盖表格自动化与模型量化，英伟达高管变动引发震动，Anthropic启动IPO申请备受市场瞩目。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-11" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-13" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
