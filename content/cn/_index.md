@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 今日AI领域资讯丰富，涵盖多款开源工具与研究进展。Agent类项目包括Slack替代方案与IDE集成插件，提升团队协作效率。量化与优化方案涉及GGUF模型处理及记忆优化。研究论文方面，探讨了多模态编码、强化学习、视频生成一致性以及模型透明度等关键议题。  此外，社区在隐私文档扫描、语音转换及车载智能
+description: Lovable应用因泄露二十万条私人信息引发安全关注，科技行业对隐私定义展开热议。 Anthropic与Perplexity更新平台功能，开源社区智能体项目持续保持极高活跃度。 模型技术取得显著突破，学术研究推动前沿发展，市场争议与行业宣言引发广泛讨论。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-14" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-15" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
