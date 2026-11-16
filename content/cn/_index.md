@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: Lovable应用因泄露二十万条私人信息引发安全关注，科技行业对隐私定义展开热议。 Anthropic与Perplexity更新平台功能，开源社区智能体项目持续保持极高活跃度。 模型技术取得显著突破，学术研究推动前沿发展，市场争议与行业宣言引发广泛讨论。
+description: Blender集成视觉助手及Gemini配置工具面世，开源社区聚焦 AI开发效率提升。科研方面八智能体引擎与实时变声器发布， 私有安全备受关注。行业探讨AI开源与安全，前沿研究突破。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-15" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-16" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
