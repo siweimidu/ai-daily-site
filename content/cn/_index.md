@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: Blender集成视觉助手及Gemini配置工具面世，开源社区聚焦 AI开发效率提升。科研方面八智能体引擎与实时变声器发布， 私有安全备受关注。行业探讨AI开源与安全，前沿研究突破。
+description: 今日科技要闻频发，联合航空与微软邮件系统出现技术故障，波音火箭任务失利致卫星受损。AI领域进展显著，阿里发布模型新品，开源社区推出多项智能体开发工具与研究。同时，社区关注网络安全风险，防范爬虫与垃圾邮件，并探讨了人工智能在多领域内的深度应用与未来架构安全。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-16" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-17" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
