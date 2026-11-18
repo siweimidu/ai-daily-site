@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 今日科技要闻频发，联合航空与微软邮件系统出现技术故障，波音火箭任务失利致卫星受损。AI领域进展显著，阿里发布模型新品，开源社区推出多项智能体开发工具与研究。同时，社区关注网络安全风险，防范爬虫与垃圾邮件，并探讨了人工智能在多领域内的深度应用与未来架构安全。
+description: Anthropic面临监管质疑的同时推出新技术挑战英伟达地位，微软与OpenAI发布新模型，百度小米提示AI炒作风险。 科技界聚焦隐私与开发工具，Win11被指收集遥测数据，开源社区涌现本地优化工具与绕过区域限制等项目。 学术界在语言模型计算、视觉代理推理及确定性训练等方面取得进展，研究人员持续探索
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-17" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-18" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
