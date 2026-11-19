@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: Anthropic面临监管质疑的同时推出新技术挑战英伟达地位，微软与OpenAI发布新模型，百度小米提示AI炒作风险。 科技界聚焦隐私与开发工具，Win11被指收集遥测数据，开源社区涌现本地优化工具与绕过区域限制等项目。 学术界在语言模型计算、视觉代理推理及确定性训练等方面取得进展，研究人员持续探索
+description: 今日人工智能领域动态涵盖多个维度，包括提升模型推理效率的创新框架与编程智能体研究，探讨了如何通过校准程序与优化技术改善性能。 谷歌发布Gemini新模型并引发关于流量影响的讨论，同时学术界针对智能体安全性与合规性提出了联邦审计架构，应对潜在视觉漏洞。 在行业应用方面，大模型已深度融入芯片设计与自动驾
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-18" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-19" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
