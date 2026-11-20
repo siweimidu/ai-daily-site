@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 今日人工智能领域动态涵盖多个维度，包括提升模型推理效率的创新框架与编程智能体研究，探讨了如何通过校准程序与优化技术改善性能。 谷歌发布Gemini新模型并引发关于流量影响的讨论，同时学术界针对智能体安全性与合规性提出了联邦审计架构，应对潜在视觉漏洞。 在行业应用方面，大模型已深度融入芯片设计与自动驾
+description: 开源领域发布多种大模型优化工具与插件，助力提升计算性能， 学术界提出越狱检测与元认知校准方案，推动智能体工程进步， 行业动态方面，大型公司发布新模型并上市，引发对技术热议。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-19" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-20" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
