@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: AI行业近期竞争激烈，争议不断，包括黄仁勋遭国会批评以及高管言论引发讨论。 Kagi Mail开启公测，多款编程代理工具降低开发门槛，AI模型效率也显著提升。 AI在学术研究、安全性探索及工具开发领域均获突破，推动技术向更深度应用迈进。
+description: 自动驾驶研究取得参数剪枝与多模态整合进展，多模态搜索工具优化显著。 大模型推理自我监控能力待提升，物理引导模型在洪水预报领域显优势。 AI智能体生态引发行业热议，开源社区涌现大量创新项目推动本地应用。
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-24" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-25" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
