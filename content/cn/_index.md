@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 自动驾驶研究取得参数剪枝与多模态整合进展，多模态搜索工具优化显著。 大模型推理自我监控能力待提升，物理引导模型在洪水预报领域显优势。 AI智能体生态引发行业热议，开源社区涌现大量创新项目推动本地应用。
+description: 今日AI领域创新不断，Sous-labs等推出高效算力工具与底层汇编模型，AI智能体办公自动化集成度显著提升，通过轮换机制突破限制。 生活娱乐领域出现三维桌面宠物与模拟游戏，AI深度融合日常体验，同时学术界在机器人操纵与视觉模型研究方面取得重大突破进展。 在部署过程中，业界高度关注大规模算力消耗与金
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-25" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-26" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
