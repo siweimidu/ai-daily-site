@@ -3,7 +3,7 @@ linkTitle: AI 日报
 title: AI 洞察日报
 breadcrumbs: false
 comments: false
-description: 近期人工智能在编码智能体开发、模型性能优化及视觉推理领域取得突破，多智能体架构成为核心趋势。 研究人员通过改进算法提升了长文本推理效率，并利用新基准测试发现视觉模型在非典型场景下的短板。 行业聚焦于数据隐私保护与监管政策，开源社区持续推出高效工具，促进了各垂直领域的技术应用与生态发展。
+description: 研究人员通过迁移学习提升通信效率并量化了病理模型表征能力，同时探讨了电信领域大模型的隐私挑战与安全性。 架构优化方面推出了循环记忆复用模型，并揭示视觉生成对视觉问答可能存在负面影响，冗余代码剔除技术获得进展。 智能体基准评估关注语音协作与数学推理，行业对算力资源控制及模型行为争议较大，自我托管服务受
 cascade:
   type: docs
 ---
@@ -13,7 +13,7 @@ AI 洞察日报
 {{< /hextra/hero-headline >}}
 
 <div style="margin-top: 2rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-  {{< hextra/hero-badge link="/2026-11/2026-11-27" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
+  {{< hextra/hero-badge link="/2026-11/2026-11-28" >}}🚀 阅读今日日报{{< /hextra/hero-badge >}}
   {{< hextra/hero-badge link="https://ai-daily.352388732.workers.dev/rss?days=7" >}}📡 RSS 订阅{{< /hextra/hero-badge >}}
 </div>
 
